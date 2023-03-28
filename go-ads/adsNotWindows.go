@@ -1,3 +1,4 @@
+//go:build !windows
 // +build !windows
 
 package ads
@@ -6,8 +7,8 @@ import (
 	"encoding/binary"
 	"time"
 
-	"periph.io/x/conn/v3/i2c"
-	"periph.io/x/conn/v3/2creg"
+	"periph.io/x/periph/conn/v3/i2c"
+	"periph.io/x/periph/conn/v3/i2c/i2creg"
 )
 
 // NewADS to create a new ADS struct.
